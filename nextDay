@@ -1,0 +1,122 @@
+int main()
+{
+
+int month, day, year, leapYear;
+
+printf("Enter the month: ");
+scanf("%d", &month);
+printf("Enter the day: ");
+scanf("%d", &day);
+printf("Enter the year: ");
+scanf("%d", &year);
+
+if(year % 400 == 0){
+    leapYear = 1;
+}else if(year % 100 == 0){
+    leapYear = 0;
+}else if(year % 4 == 0){
+    leapYear = 1;
+}else{
+    leapYear = 0;
+}
+
+
+if(month == 1){
+    if(day < 31){
+        printf("January %d, %d", day + 1, year);
+    }else{
+        printf("February 1, %d", year);
+    }
+}
+if(month == 2){
+    if(leapYear == 1){
+        if(day < 29){
+            printf("February %d, %d", day+1, year);
+        }else{
+            printf("March 1, %d", year);
+        }
+    }else {
+        if(day < 28){
+            printf("February %d, %d", day+1, year);
+        }else{
+            printf("March 1, %d", year);
+        }
+
+}}
+if(month == 3){
+    if(day < 31){
+        printf("March %d, %d", day+1, year);
+    }else{
+        printf("April 1, %d", year);
+    }
+}
+if(month ==4){
+    if(day < 30){
+        printf("April %d, %d", day+1, year);
+    }else {
+        printf("May 1, %d", year);
+    }
+}
+if(month == 5){
+    if(day < 31){
+        printf("May %d, %d", day+1, year);
+    } else{
+        printf("June 1, %d", year);
+    }
+}
+if(month == 6){
+    if(day < 30){
+        printf("June %d, %d", day+1, year);
+    }else {
+        printf("July 1, %d", year);
+    }
+}
+if(month == 7){
+    if(day < 31){
+        printf("July %d, %d", day+1, year);
+    }else {
+        printf("August 1, %d", year);
+    }
+}
+if(month == 8){
+    if(day < 31){
+        printf("August %d, %d", day+1, year);
+    }else {
+        printf("September 1, %d", year);
+    }
+}
+if(month == 9){
+    if(day < 30){
+        printf("September %d, %d", day+1, year);
+    }else{
+        printf("October 1, %d", year);
+    }
+}
+if(month == 10){
+    if(day < 31){
+        printf("October %d, %d", day+1, year);
+    }else {
+        printf("November 1, %d", year);
+    }
+}
+if(month == 11){
+    if(day < 30){
+        printf("November %d, %d", day+1, year);
+    }else{
+        printf("December 1, %d", year);
+    }
+}
+if(month == 12){
+    if(day < 31){
+            if(day == 25){
+                printf("MERRY CHRISTMAS %d!!!Oh and the next day would be December 26, %d", year, year);
+            }else {
+                printf("December %d, %d", day+1, year);
+    }}else {
+        printf("January 1, %d", year+1);
+    }
+}
+
+
+return 0;
+}
